@@ -24,13 +24,13 @@
                 <a lang="en" href="./index.html" class="logo">Web<span class="logo-color-black">Studio</span></a>
                 <ul class="nav-list">
                     <li class="studio">
-                        <a class="nav-link link" href="./index.html">Студия</a>
+                        <a class="nav-link link active" href="./index.html">Студия</a>
                     </li>
                     <li class="portfolio">
-                        <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+                        <a class="nav-link link " href="./portfolio.html">Портфолио</a>
                     </li>
                     <li>
-                        <a class="nav-link link" href="#">Контакты</a>
+                        <a class="nav-link link " href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -56,7 +56,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
 
         </section>
         <section class="section element-padding-bottom-0">
@@ -417,7 +417,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>X</button>
+        </div>
 
+    </div>
+    <script src="./js/modal.js">
+
+    </script>
 </body>
 
 </html>
